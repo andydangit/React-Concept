@@ -1,9 +1,9 @@
 const reactContentRoot = document.getElementById("root");
 
-const myFirstElement = React.createElement("ul", null, [
-  React.createElement("li", null, "item1"),
-  React.createElement("li", null, "item2"),
-]);
+// const myFirstElement = React.createElement("ul", null, [
+//   React.createElement("li", null, "item1"),
+//   React.createElement("li", null, "item2"),
+// ]);
 
 const myJSXElement = (
   <ul>
@@ -12,4 +12,4 @@ const myJSXElement = (
   </ul>
 );
 
-ReactDOM.render(myFirstElement, reactContentRoot);
+ReactDOM.render(myJSXElement, reactContentRoot);
