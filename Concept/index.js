@@ -1,9 +1,3 @@
-const incrementBtn = document.getElementById("increment-button");
-const countDisplay = document.getElementById("count-display");
+const reactContentRoot = document.getElementById("root"); 
 
-let currentCount = 0;
-
-incrementBtn.addEventListener('click', () => {
-    currentCount ++
-    countDisplay.innerHTML = currentCount
-})
+ReactDOM.render('hello world', reactContentRoot)
