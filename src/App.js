@@ -1,9 +1,15 @@
-import './App.css';
+import "./App.css";
 
 function App() {
+  const myItem = "Andy";
+
   return (
     <div className="App">
-      test 
+      <ul>
+        <li> item 1 </li>
+        <li>item </li>
+        <li> {myItem}</li>
+      </ul>
     </div>
   );
 }
