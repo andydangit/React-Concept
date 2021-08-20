@@ -5,10 +5,13 @@ const reactContentRoot = document.getElementById("root");
 //   React.createElement("li", null, "item2"),
 // ]);
 
+const myItem = 'item3'
+
 const myJSXElement = (
   <ul>
     <li>item 1 </li>
     <li>item 3 </li>
+    <li> {myItem} </li>
   </ul>
 );
 
