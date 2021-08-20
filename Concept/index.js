@@ -5,14 +5,22 @@ const reactContentRoot = document.getElementById("root");
 //   React.createElement("li", null, "item2"),
 // ]);
 
-const myItem = 'item3'
 
-const myJSXElement = (
-  <ul>
+
+const App = () => {
+    const myItem = 'item3'
+
+return ( 
+    <ul>
     <li>item 1 </li>
     <li>item 3 </li>
     <li> {myItem} </li>
   </ul>
-);
+)
+}
 
-ReactDOM.render(myJSXElement, reactContentRoot);
+
+
+
+
+ReactDOM.render(<App />, reactContentRoot);
