@@ -1,14 +1,20 @@
 import React from "react";
 
 function CountButton() {
+  const currentCount = 0;
 
-    const currentCount = 0;
+  const handleClick = () => {
+      alert("you just click ME")
+
+  }
 
   return (
     <div>
-      <button onClick={() => {
-          alert("you just click")
-      }}>+ 1 </button>
+      <button
+        onClick={handleClick}
+      >
+        + 1
+      </button>
       <div> {currentCount} </div>
     </div>
   );
