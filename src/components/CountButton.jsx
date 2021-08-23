@@ -1,10 +1,10 @@
 import React from "react";
 
 function CountButton() {
-  const currentCount = 0;
+  let currentCount = 0;
 
   const handleClick = () => {
-    alert("you just click ME");
+    console.log(currentCount);
   };
 
   return (
