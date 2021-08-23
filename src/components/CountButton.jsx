@@ -4,17 +4,12 @@ function CountButton() {
   const currentCount = 0;
 
   const handleClick = () => {
-      alert("you just click ME")
-
-  }
+    alert("you just click ME");
+  };
 
   return (
     <div>
-      <button
-        onClick={handleClick}
-      >
-        + 1
-      </button>
+      <button onClick={handleClick}>+ 1</button>
       <div> {currentCount} </div>
     </div>
   );
