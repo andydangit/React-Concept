@@ -2,12 +2,12 @@ import React, {useState} from "react";
 
 function CountButton(props) {
 
-  console.log(props);
+  console.log(props.incrementBy);
 
   const [currentCount, setCurrentCount] = useState(0)
 
   const handleClick = () => {
-      setCurrentCount(currentCount + 1)
+      setCurrentCount(currentCount + props.incrementBy)
   };
 
   console.log("component re-rendered");

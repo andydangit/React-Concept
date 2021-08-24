@@ -5,8 +5,8 @@ function App() {
 
   return (
     <div className="App">
-      <CountButton /> 
-      <CountButton /> 
+      <CountButton incrementBy={1} /> 
+      <CountButton incrementBy={5} /> 
     </div>
   );
 }
