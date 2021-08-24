@@ -12,7 +12,7 @@ function CountButton(props) {
 
   const buttonStyle = {
    background: props.buttonColor,
-    borderRadius: '10px',
+    borderRadius: props.borderRadius,
   }
 
   return (
