@@ -1,6 +1,9 @@
 import React, {useState} from "react";
 
-function CountButton() {
+function CountButton(props) {
+
+  console.log(props);
+
   const [currentCount, setCurrentCount] = useState(0)
 
   const handleClick = () => {
