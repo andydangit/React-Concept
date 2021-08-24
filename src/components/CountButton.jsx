@@ -12,6 +12,8 @@ function CountButton(props) {
 
   const divStyle = {
     color: 'blue',
+    border: '1px solid black',
+    borderRadius: '10px',
   }
 
   return (
