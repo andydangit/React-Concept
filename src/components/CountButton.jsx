@@ -7,6 +7,8 @@ function CountButton() {
       setCurrentCount(currentCount + 1)
   };
 
+  console.log("component re-rendered");
+
   return (
     <div>
       <button onClick={handleClick}>+ 1</button>
