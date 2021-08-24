@@ -14,7 +14,7 @@ function CountButton(props) {
 
   return (
     <div>
-      <button onClick={handleClick}>+ 1</button>
+      <button onClick={handleClick}>+ {props.incrementBy}</button>
       <div> {currentCount} </div>
     </div>
   );

@@ -7,6 +7,7 @@ function App() {
     <div className="App">
       <CountButton incrementBy={1} /> 
       <CountButton incrementBy={5} /> 
+      <CountButton incrementBy={7} /> 
     </div>
   );
 }
