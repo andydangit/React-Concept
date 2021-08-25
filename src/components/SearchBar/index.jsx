@@ -16,13 +16,14 @@ setSearchValue("");
   // this will create if something will show up 
   const shouldDisplayButton = searchValue.length > 0
 
-console.log(shouldDisplayButton);
+
 
   return (
     <div>
       <input type="text" value={searchValue} onChange={handleInputChange} />
       <br /> 
-      <button onClick={handleClearClick}> Clear</button>
+      {shouldDisplayButton &&  <button onClick={handleClearClick}> Clear</button>}
+     
     </div>
   );
 }
