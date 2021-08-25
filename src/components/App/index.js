@@ -1,5 +1,5 @@
-import "./App.css";
-import CountButton from "./CountButton/index";
+import "../App/index.css";
+import CountButton from "../CountButton/index";
 
 function App() {
 
