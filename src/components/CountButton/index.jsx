@@ -19,7 +19,7 @@ function CountButton(props) {
   return (
     <div >
       <button style={buttonStyle} onClick={handleClick}>+ {props.incrementBy}</button>
-      <div> {currentCount} </div>
+      <div className="countDisplay"> {currentCount} </div>
     </div>
   );
 }
