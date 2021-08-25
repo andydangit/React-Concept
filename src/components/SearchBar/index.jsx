@@ -2,9 +2,14 @@ import React from 'react'
 import "./index.css"
 
 function SearchBar() {
+
+    const searchValue = "Software Developer"
+    
+
+
     return (
         <div>
-            test
+            <input type="text" value={searchValue} />
         </div>
     )
 }
