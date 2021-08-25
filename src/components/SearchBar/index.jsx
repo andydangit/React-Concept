@@ -1,22 +1,25 @@
-import React, {useState} from 'react'
-import "./index.css"
+import React, { useState } from "react";
+import "./index.css";
 
 function SearchBar() {
+  const [searchValue, setSearchValue] = useState("");
 
-   const [searchValue, setSearchValue] = useState ("the search value");
+  const handleInputChange = (event) => {
+      console.log(event);
+    setSearchValue(event.target.value);
+  };
 
-    const handleInputChange = (event) => {
-        setSearchValue(event.target.value)
-    }
-    
+  const handleClearClick = () => { 
+setSearchValue("");
+  }
 
-
-    return (
-        <div>
-            <input type="text" value={searchValue} onChange={handleInputChange} />
-            
-        </div>
-    )
+  return (
+    <div>
+      <input type="text" value={searchValue} onChange={handleInputChange} />
+      <br /> 
+      <button onClick={handleClearClick}> Clear</button>
+    </div>
+  );
 }
 
-export default SearchBar
+export default SearchBar;
