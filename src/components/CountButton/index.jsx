@@ -11,7 +11,7 @@ function CountButton(props) {
       setCurrentCount(currentCount + props.incrementBy)
   };
 
-  // need an array 
+  // useEffect will need a 2nd argument
   useEffect(() => {
     if(currentCount === 5){
       alert("the count max is 5")

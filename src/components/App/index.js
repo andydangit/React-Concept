@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import "../App/index.css";
 import CountButton from "../CountButton/index";
 import SearchBar from "../SearchBar";
@@ -12,18 +13,28 @@ const products = [
 ];
 
 
+
 function App() {
+
+const [productsState, setProductsState] = useState([])
+
+
+  useEffect(() => {
+    setTimeout()
+  }, [])
+
+
 
   return (
     <div className="App">
-      {/* <SearchBar products={products} />
-      <SearchBar products={[
+      <SearchBar products={productsState} />
+      {/* <SearchBar products={[
         "bike rack",
         "mountain bike",
         "soccer bike"
       ]} /> */}
       
-      <CountButton incrementBy={1} buttonColor={'yellow'} borderRadius={"2px"} /> 
+      {/* <CountButton incrementBy={1} buttonColor={'yellow'} borderRadius={"2px"} />  */}
       {/* <CountButton incrementBy={5} buttonColor={"red"} borderRadius={"30px"}/> 
       <CountButton incrementBy={7} buttonColor={"green"} borderRadius={"1px"}/>  */}
     </div>
