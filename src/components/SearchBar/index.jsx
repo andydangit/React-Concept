@@ -40,10 +40,12 @@ function SearchBar() {
       {shouldDisplayButton && (
         <button onClick={handleClearClick}> Clear</button>
       )}
-
+        <ul> 
+          {/* key = identify the element in the list  */}
         {products.map((product) => {
-          return<li>{product} </li> 
+          return<li key={product}>{product} </li> 
         })}
+        </ul> 
 
     </div>
   );
