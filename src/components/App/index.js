@@ -34,7 +34,10 @@ function App() {
   return (
     <div className="App">
 
-      <Button buttonText = "myButton"/> 
+      <Button> Hello World</Button>
+      <Button> 2nd</Button>
+      <Button> Third</Button>
+
 
       {/* <CountButton
         incrementBy={1}

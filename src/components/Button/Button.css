@@ -1,5 +1,7 @@
 div{ 
+    /* display: flex; */
+    width: 350px;
     color: blue;
-    background: yellow;
-    border-radius: 5px;
+    background-color: yellow;
+
 }
