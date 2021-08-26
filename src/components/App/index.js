@@ -16,14 +16,15 @@ function App() {
 
   return (
     <div className="App">
-      <SearchBar products={products} />
+      {/* <SearchBar products={products} />
       <SearchBar products={[
         "bike rack",
         "mountain bike",
         "soccer bike"
-      ]} />
-      {/* <CountButton incrementBy={1} buttonColor={'yellow'} borderRadius={"2px"} /> 
-      <CountButton incrementBy={5} buttonColor={"red"} borderRadius={"30px"}/> 
+      ]} /> */}
+      
+      <CountButton incrementBy={1} buttonColor={'yellow'} borderRadius={"2px"} /> 
+      {/* <CountButton incrementBy={5} buttonColor={"red"} borderRadius={"30px"}/> 
       <CountButton incrementBy={7} buttonColor={"green"} borderRadius={"1px"}/>  */}
     </div>
   );

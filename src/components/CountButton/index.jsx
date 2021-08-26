@@ -1,9 +1,9 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import "./index.css";
 
 function CountButton(props) {
 
-  console.log(props.incrementBy);
+  // console.log(props.incrementBy);
 
   const [currentCount, setCurrentCount] = useState(0)
 
@@ -11,14 +11,19 @@ function CountButton(props) {
       setCurrentCount(currentCount + props.incrementBy)
   };
 
-  const buttonStyle = {
-   background: props.buttonColor,
-
-  }
+  // need an array 
+  useEffect(() => {
+    console.log("use Effect func called");
+  }, [currentCount])
+  
+  // need an array 
+  useEffect(() => {
+    console.log("use Effect func called");
+  }, [currentCount])
 
   return (
     <div >
-      <button style={buttonStyle} onClick={handleClick}>+ {props.incrementBy}</button>
+      <button onClick={handleClick}>+ {props.incrementBy}</button>
       <div className="countDisplay"> {currentCount} </div>
     </div>
   );
