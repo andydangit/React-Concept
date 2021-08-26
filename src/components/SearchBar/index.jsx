@@ -41,7 +41,9 @@ function SearchBar() {
         <button onClick={handleClearClick}> Clear</button>
       )}
 
-        
+        {products.map((product) => {
+          return<li>{product} </li> 
+        })}
 
     </div>
   );
