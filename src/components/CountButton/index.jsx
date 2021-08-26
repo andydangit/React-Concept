@@ -13,12 +13,10 @@ function CountButton(props) {
 
   // need an array 
   useEffect(() => {
-    console.log("Only Called when component mounts");
-  }, [])
-
-  // need an array 
-  useEffect(() => {
-    console.log("Called when component mounts or the currentCount is updated ");
+    if(currentCount === 5){
+      alert("the count max is 5")
+      setCurrentCount(0)
+    }
   }, [currentCount])
 
   return (
