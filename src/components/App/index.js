@@ -4,23 +4,21 @@ import CountButton from "../CountButton/index";
 import SearchBar from "../SearchBar";
 
 
-const products = [
-  "tooth paste", 
-  "tooth brush", 
-  "mouth wash",
-  "dental floss",
-  'mouth guard',
-];
-
-
-
 function App() {
 
 const [productsState, setProductsState] = useState([])
 
 
   useEffect(() => {
-    setTimeout()
+    setTimeout(() => {
+      setProductsState ([
+        "tooth paste", 
+        "tooth brush", 
+        "mouth wash",
+        "dental floss",
+        'mouth guard',
+      ])
+    }, 2000)
   }, [])
 
 
