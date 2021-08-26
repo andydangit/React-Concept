@@ -32,6 +32,13 @@ function SearchBar() {
   // this will create if something will show up
   const shouldDisplayButton = searchValue.length > 0;
 
+  // this will filter
+const filteredProducts = products.filter((product) => {
+  return product.includes(searchValue)
+})
+
+
+
   return (
     <div>
       <input type="text" value={searchValue} onChange={handleInputChange} />
@@ -42,7 +49,7 @@ function SearchBar() {
       )}
         <ul> 
           {/* key = identify the element in the list  */}
-        {products.map((product) => {
+        {filteredProducts.map((product) => {
           return<li key={product}>{product} </li> 
         })}
         </ul> 
