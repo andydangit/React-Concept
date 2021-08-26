@@ -21,16 +21,14 @@ const [productsState, setProductsState] = useState([])
     }, 2000)
   }, [])
 
-
+const hasProducts = productsState.length > 0;
 
   return (
     <div className="App">
-      <SearchBar products={productsState} />
-      {/* <SearchBar products={[
-        "bike rack",
-        "mountain bike",
-        "soccer bike"
-      ]} /> */}
+
+    {hasProducts ? <SearchBar products={productsState} />: "Loading"}
+
+      
       
       {/* <CountButton incrementBy={1} buttonColor={'yellow'} borderRadius={"2px"} />  */}
       {/* <CountButton incrementBy={5} buttonColor={"red"} borderRadius={"30px"}/> 
