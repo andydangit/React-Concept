@@ -14,20 +14,25 @@ const [productsState, setProductsState] = useState([])
     // this is asynchronous
     fetch('https://fakestoreapi.com/products')
             .then(res=>res.json())
-            .then(json=>{
-              console.log(json);
+            .then(productsArray=>{
+              const newProductsState = productsArray.map((product) => {
+                return product.title
+              })
+              setProductsState(newProductsState)
             })
 
 
-    setTimeout(() => {
-      setProductsState ([
-        "tooth paste", 
-        "tooth brush", 
-        "mouth wash",
-        "dental floss",
-        'mouth guard',
-      ])
-    }, 2000)
+    // setTimeout(() => {
+    //   setProductsState ([
+    //     "tooth paste", 
+    //     "tooth brush", 
+    //     "mouth wash",
+    //     "dental floss",
+    //     'mouth guard',
+    //   ])
+    // }, 2000)
+
+    
   }, [])
 
 const hasProducts = productsState.length > 0;
