@@ -1,16 +1,8 @@
 import React, { useState } from "react";
 import "./index.css";
 
-const products = [
-  "tooth paste", 
-  "tooth brush", 
-  "mouth wash",
-  "dental floss",
-  'mouth guard',
-];
 
-
-function SearchBar() {
+function SearchBar(props) {
   const [searchValue, setSearchValue] = useState("");
 
   const handleInputChange = (event) => {
@@ -23,7 +15,7 @@ function SearchBar() {
   };
 
   // this will map the array onto screen  
-  console.log(products.map((product) => {
+  console.log(props.products.map((product) => {
     return product.toUpperCase()
   })
   );
@@ -33,7 +25,7 @@ function SearchBar() {
   const shouldDisplayButton = searchValue.length > 0;
 
   // this will filter
-const filteredProducts = products.filter((product) => {
+const filteredProducts = props.products.filter((product) => {
   return product.includes(searchValue)
 })
 
