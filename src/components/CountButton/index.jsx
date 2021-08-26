@@ -13,12 +13,12 @@ function CountButton(props) {
 
   // need an array 
   useEffect(() => {
-    console.log("use Effect func called");
-  }, [currentCount])
-  
+    console.log("Only Called when component mounts");
+  }, [])
+
   // need an array 
   useEffect(() => {
-    console.log("use Effect func called");
+    console.log("Called when component mounts or the currentCount is updated ");
   }, [currentCount])
 
   return (
