@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import "../App/index.css";
 import CountButton from "../CountButton/index";
 import SearchBar from "../SearchBar";
+import Button from '../Button/Button';
 
 function App() {
   const [productsState, setProductsState] = useState([]);
@@ -32,14 +33,16 @@ function App() {
 
   return (
     <div className="App">
-      
-      <CountButton
+
+      <Button buttonText = "myButton"/> 
+
+      {/* <CountButton
         incrementBy={1}
         buttonColor={"yellow"}
         borderRadius={"2px"}
-      />
+      /> */}
 
-      {hasProducts ? <SearchBar products={productsState} /> : "Loading"}
+      {/* {hasProducts ? <SearchBar products={productsState} /> : "Loading"} */}
 
       {/* <CountButton incrementBy={5} buttonColor={"red"} borderRadius={"30px"}/> 
       <CountButton incrementBy={7} buttonColor={"green"} borderRadius={"1px"}/>  */}

@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
+import './Button.css'
 
-const Button = () => {
-    return ( 
-        
-     );
-}
- 
+const Button = (props) => {
+  return <div>{props.buttonText}</div>;
+};
+
 export default Button;
